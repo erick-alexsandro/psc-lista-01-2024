@@ -24,21 +24,27 @@ public class Exercise5 {
         System.out.print("Segundo valor: ");
         double valor2 = scan.nextDouble();
 
-        if (operação == '+') {
-            resultado = valor1 + valor2;
-            System.out.println(valor1 + " + " + valor2 + " = " + resultado);
-        } else if (operação == '-') {
-            resultado = valor1 - valor2;
-            System.out.println(valor1 + " - " + valor2 + " = " + resultado);
-        } else if (operação == 'x') {
-            resultado = valor1 * valor2;
-            System.out.println(valor1 + " X " + valor2 + " = " + resultado);
-        } else if (operação == '/') {
-            resultado = valor1 / valor2;
-            System.out.println(valor1 + " ÷ " + valor2 + " = " + resultado);
-        } else if (operação == '^') {
-            resultado = Math.pow(valor1, valor2);
-            System.out.println(valor1 + " ^ " + valor2 + " = " + resultado);
+        switch (operação) {
+            case '+':
+                resultado = valor1 + valor2;
+                System.out.println(valor1 + " + " + valor2 + " = " + resultado);
+                break;
+            case '-':
+                resultado = valor1 - valor2;
+                System.out.println(valor1 + " - " + valor2 + " = " + resultado);
+                break;
+            case 'x':
+                resultado = valor1 * valor2;
+                System.out.println(valor1 + " X " + valor2 + " = " + resultado);
+                break;
+            case '/':
+                resultado = valor1 / valor2;
+                System.out.println(valor1 + " ÷ " + valor2 + " = " + resultado);
+                break;
+            case '^':
+                resultado = Math.pow(valor1, valor2);
+                System.out.println(valor1 + " ^ " + valor2 + " = " + resultado);
+                break;
         }
 
         scan.close();
