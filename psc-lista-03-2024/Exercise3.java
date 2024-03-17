@@ -32,5 +32,6 @@ public class Exercise3 {
             System.out.println("Raiz 2: " + (-b - Math.sqrt(discriminante)) / (2 * a));
         }
 
+        scan.close();
     }
 }
