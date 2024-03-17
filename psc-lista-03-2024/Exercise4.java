@@ -26,10 +26,10 @@ public class Exercise4 {
             resultado = 2 * Math.PI * valor;
             System.out.println("Perímetro do círculo: " + resultado);
         } else if (operação == 2) {
-            resultado = Math.PI * (valor * valor);
+            resultado = Math.PI * Math.pow(valor, 2);
             System.out.println("Área do círculo: " + resultado);
         } else if (operação == 3) {
-            resultado = (4.0 / 3.0) * Math.PI * (valor * valor * valor);
+            resultado = (4.0 / 3.0) * Math.PI * Math.pow(valor, 3);
             System.out.println("Volume da esfera: " + resultado);
         }
 
